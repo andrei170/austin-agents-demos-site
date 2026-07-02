@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Sites &middot; Real Estate Agents &middot; AG1 Consulting</title>
+<meta name="description" content="Concept redesign demos built by AG1 Consulting for four real estate professionals.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0b0d12;--bg-elev:#141821;--card:#161b26;
+  --accent:#6ea8fe;--accent-bright:#8fbcff;
+  --cream:#f3f5f9;--muted:#9aa6b8;--dim:#5f6b7d;
+  --border:rgba(154,166,184,0.16);--border-bright:rgba(110,168,254,0.42);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+iconify-icon{display:inline-block;vertical-align:-0.125em}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 70% 50% at 25% 0%,rgba(110,168,254,0.09),transparent 55%);pointer-events:none;z-index:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+header{padding:80px 0 40px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--border-bright);border-radius:100px;background:rgba(110,168,254,0.07);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:26px;font-weight:600}
+h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,5.4vw,60px);line-height:1.05;color:var(--cream);margin-bottom:18px}
+h1 em{color:var(--accent-bright);font-style:italic}
+.lede{font-size:17px;color:var(--muted);max-width:60ch;margin:0 auto;font-weight:300}
+.note{margin:26px auto 0;max-width:64ch;font-size:13px;color:var(--dim);border:1px solid var(--border);border-radius:10px;padding:14px 18px;background:var(--bg-elev)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:36px 0 20px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:linear-gradient(160deg,var(--card),var(--bg-elev));border:1px solid var(--border);border-radius:16px;padding:30px;transition:all 0.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);border-color:var(--border-bright);box-shadow:0 24px 50px rgba(0,0,0,0.5)}
+.card-top{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.swatch{width:44px;height:44px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:#fff}
+.card h2{font-family:'Fraunces',serif;font-weight:600;font-size:22px;color:var(--cream);line-height:1.1}
+.card .handle{font-size:12px;color:var(--dim);margin-top:2px}
+.card .angle{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:20px;flex-grow:1}
+.card .angle strong{color:var(--cream);font-weight:600}
+.card-links{display:flex;flex-direction:column;gap:9px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:9px;font-size:13px;font-weight:600;letter-spacing:0.02em;transition:all 0.2s}
+.btn-primary{background:var(--accent);color:#0b0d12}
+.btn-primary:hover{background:var(--accent-bright)}
+.btn-ghost{border:1px solid var(--border);color:var(--muted)}
+.btn-ghost:hover{border-color:var(--border-bright);color:var(--cream)}
+.tag{display:inline-block;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);border:1px solid var(--border);border-radius:5px;padding:3px 8px;margin-bottom:14px;align-self:flex-start}
+footer{padding:30px 0 70px;text-align:center;font-size:12px;color:var(--dim);border-top:1px solid var(--border);margin-top:24px}
+.links-plain{margin:20px auto 0;max-width:70ch;font-size:13px;color:var(--muted);background:var(--bg-elev);border:1px solid var(--border);border-radius:10px;padding:18px 20px}
+.links-plain h3{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:12px}
+.links-plain a{color:var(--accent-bright);word-break:break-all}
+.links-plain li{margin-bottom:8px;list-style:none}
+.links-plain b{color:var(--cream)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><iconify-icon icon="mdi:folder-star-outline"></iconify-icon>AG1 Consulting &middot; Demo builds</div>
+    <h1>Four demo sites, <em>one page.</em></h1>
+    <p class="lede">Concept redesigns built to an S+ standard for four real estate professionals. Each is a distinct brand built around that person's real, verified edge. Click any demo to view it live.</p>
+    <div class="note"><strong>Heads up:</strong> the first three are eXp Austin agents. The fourth, B.E.A.R. Coaching, is a San Antonio agent-coaching brand (Art Fernandez) - a different business, and not a verified part of the Austin group. Every unverifiable number in the demos is placeholder-flagged, not invented.</div>
+  </header>
+
+  <div class="grid">
+    <!-- Javier -->
+    <div class="card">
+      <span class="tag">eXp Austin agent</span>
+      <div class="card-top">
+        <div class="swatch" style="background:linear-gradient(140deg,#c9642f,#a44e22)">J</div>
+        <div><h2>Javier Melendez</h2><div class="handle">@javiermelendezatx</div></div>
+      </div>
+      <div class="angle">Leads with his buried <strong>bilingual, Austin-raised</strong> advantage instead of a generic "Austin expert" headline. Espresso + terracotta.</div>
+      <div class="card-links">
+        <a class="btn btn-primary" href="https://andrei170.github.io/javier-melendez-atx-site/"><iconify-icon icon="mdi:open-in-new"></iconify-icon>View live demo</a>
+      </div>
+    </div>
+
+    <!-- Betsy -->
+    <div class="card">
+      <span class="tag">Central TX agent</span>
+      <div class="card-top">
+        <div class="swatch" style="background:linear-gradient(140deg,#c8a24c,#a5842f)">B</div>
+        <div><h2>Betsy Bolinger</h2><div class="handle">@betsyismyrealtor</div></div>
+      </div>
+      <div class="angle">Built around <strong>20 years, "100% recommended," and the VA / new-construction lane.</strong> Her first real website. Navy + brass.</div>
+      <div class="card-links">
+        <a class="btn btn-primary" href="https://andrei170.github.io/betsy-bolinger-site/"><iconify-icon icon="mdi:open-in-new"></iconify-icon>View live demo</a>
+      </div>
+    </div>
+
+    <!-- Stephy -->
+    <div class="card">
+      <span class="tag">eXp Austin agent</span>
+      <div class="card-top">
+        <div class="swatch" style="background:linear-gradient(140deg,#d76a82,#b04d64)">S</div>
+        <div><h2>Stephy Salazar</h2><div class="handle">@homeswithstephy</div></div>
+      </div>
+      <div class="angle">Community-first, leading with her <strong>bilingual Latina "Book Club Latinas"</strong> angle instead of a Linktree. Plum + rose.</div>
+      <div class="card-links">
+        <a class="btn btn-primary" href="https://andrei170.github.io/homes-with-stephy-site/"><iconify-icon icon="mdi:open-in-new"></iconify-icon>View live demo</a>
+      </div>
+    </div>
+
+    <!-- BEAR -->
+    <div class="card">
+      <span class="tag">San Antonio coach</span>
+      <div class="card-top">
+        <div class="swatch" style="background:linear-gradient(140deg,#e0a12e,#b57d1c)">A</div>
+        <div><h2>B.E.A.R. Coaching</h2><div class="handle">@real_estate_coaching</div></div>
+      </div>
+      <div class="angle">Coaching brand led by <strong>Art Fernandez's real 28-year operator track record</strong> instead of hype. Black + amber-gold.</div>
+      <div class="card-links">
+        <a class="btn btn-primary" href="https://andrei170.github.io/bear-coaching-site/"><iconify-icon icon="mdi:open-in-new"></iconify-icon>View live demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="links-plain">
+    <h3>All links (copy-paste)</h3>
+    <ul>
+      <li><b>Javier Melendez</b> &middot; https://andrei170.github.io/javier-melendez-atx-site/</li>
+      <li><b>Betsy Bolinger</b> &middot; https://andrei170.github.io/betsy-bolinger-site/</li>
+      <li><b>Stephy Salazar</b> &middot; https://andrei170.github.io/homes-with-stephy-site/</li>
+      <li><b>B.E.A.R. Coaching</b> &middot; https://andrei170.github.io/bear-coaching-site/</li>
+    </ul>
+  </div>
+
+  <footer>Built by AG1 Consulting &middot; concept demos, not official sites &middot; 2026</footer>
+</div>
+</body>
+</html>
